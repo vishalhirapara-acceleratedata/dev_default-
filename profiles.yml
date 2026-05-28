@@ -1,0 +1,13 @@
+default:
+  target: ephemeral
+  outputs:
+    ephemeral:
+      type: duckdb
+      path: "/Users/vishalh/Desktop/accelerate-data/worktrees/feature/vd-2250-fork-inherits-parents-full-conversation-history-cross-server/tmp/clones/16c42e4f-cc51-476b-8881-c6a3949566e6/6b7d93c0-d078-4f76-98ed-5568f8f242b1/data/db.db"
+      schema: main
+      threads: 4
+      attach:
+        - path: "db.db"
+          alias: domain
+          read_only: true
+
